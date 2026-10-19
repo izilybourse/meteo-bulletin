@@ -1,0 +1,29 @@
+name: Relais bulletin Météo-France La Réunion
+on:
+  schedule:
+    - cron: "7,37 * * * *"   # toutes les 30 min
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: bulletin
+  cancel-in-progress: false
+jobs:
+  relais:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Récupérer le bulletin
+        run: python3 fetch_bulletin.py out_bulletin.json
+      - name: Publier sur la branche data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir /tmp/pub && cp out_bulletin.json /tmp/pub/bulletin.json && cd /tmp/pub
+          git init -q -b data
+          git config user.name "bulletin-relay"
+          git config user.email "bulletin-relay@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git add bulletin.json
+          git commit -qm "bulletin $(date -u +%FT%TZ)"
+          git push -f origin data
