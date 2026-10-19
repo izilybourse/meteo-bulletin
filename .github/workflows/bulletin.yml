@@ -41,6 +41,11 @@ jobs:
         continue-on-error: true
         run: python3 fetch_ack.py out/ack.json
 
+      # --- Bulletins marine (côte, large, grand large, avis de houle) -> marine.json
+      - name: Bulletins marine
+        continue-on-error: true
+        run: python3 fetch_marine.py out/marine.json
+
       # --- Images : radar (meteofrance.re/fr/images-radar) et carte Vigicrues -> radar.png, crues.png, images.json
       - name: Images radar et crues
         continue-on-error: true
