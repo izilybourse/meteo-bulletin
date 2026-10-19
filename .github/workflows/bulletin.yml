@@ -1,52 +1,71 @@
-name: Relais bulletins Météo-France La Réunion
+name: Relais Météo-France La Réunion
 on:
   schedule:
-    - cron: "7,37 * * * *"   # toutes les 30 min
+    - cron: "*/10 * * * *"   # toutes les 10 min (GitHub peut retarder un peu)
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: bulletin
+  group: relais
   cancel-in-progress: false
 jobs:
   relais:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - name: Préparer le dossier de sortie
-        run: mkdir -p out
 
-      # Bulletin de prévisions météorologiques (meteofrance.re/fr) -> out/bulletin.json
-      - name: Récupérer le bulletin
-        id: bulletin
+      - name: Récupérer l'état précédent (branche data)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p out prev
+          if git clone -q --depth 1 -b data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" prev_clone; then
+            cp -f prev_clone/* prev/ 2>/dev/null || true
+          fi
+          ls -l prev
+
+      # --- Bulletin de prévisions météorologiques (meteofrance.re/fr) -> bulletin.json
+      - name: Bulletin de prévisions
         continue-on-error: true
         run: python3 fetch_bulletin.py out/bulletin.json
 
-      # Prévisions marine ACK (meteofrance.re/fr/marine/ack) -> out/ack.json
-      # La page construit le bulletin en JavaScript : on utilise un navigateur sans écran.
-      - name: Installer le navigateur
-        continue-on-error: true
+      # --- Outils communs : navigateur sans écran + lecture GRIB2
+      - name: Installer Playwright, Chromium et eccodes
         run: |
-          pip install playwright
+          pip install playwright eccodes numpy
           python -m playwright install --with-deps chromium
-      - name: Récupérer le bulletin ACK
-        id: ack
+
+      # --- Prévisions marine ACK (page construite en JavaScript) -> ack.json
+      - name: Bulletin marine ACK
         continue-on-error: true
         run: python3 fetch_ack.py out/ack.json
 
-      # Publication : on garde les fichiers précédents de la branche data si une récupération a échoué
+      # --- Images : radar (meteofrance.re/fr/images-radar) et carte Vigicrues -> radar.png, crues.png, images.json
+      - name: Images radar et crues
+        continue-on-error: true
+        run: |
+          cp -f prev/images.json out/images.json 2>/dev/null || true
+          python3 fetch_images.py out
+
+      # --- AROME Outre-mer (open data data.gouv.fr) -> arome.json (ne retélécharge que si un nouveau cycle est sorti)
+      - name: AROME Outre-mer
+        continue-on-error: true
+        run: python3 fetch_arome.py out/arome.json --prev prev/arome.json
+
+      # --- Publication : on garde les fichiers précédents si une récupération a échoué
       - name: Publier sur la branche data
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir /tmp/pub && cd /tmp/pub
-          git init -q -b data
-          git config user.name "bulletin-relay"
-          git config user.email "bulletin-relay@users.noreply.github.com"
-          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          if git fetch -q --depth 1 origin data; then git checkout -q FETCH_HEAD -- . ; fi
-          cp -f "$GITHUB_WORKSPACE"/out/*.json . 2>/dev/null || true
+          cp -f "$GITHUB_WORKSPACE"/prev/* . 2>/dev/null || true
+          cp -f "$GITHUB_WORKSPACE"/out/* . 2>/dev/null || true
           ls -l
+          git init -q -b data
+          git config user.name "meteo-relay"
+          git config user.email "meteo-relay@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git add -A
-          git commit -qm "bulletins $(date -u +%FT%TZ)"
+          git commit -qm "relais $(date -u +%FT%TZ)"
           git push -f origin data
