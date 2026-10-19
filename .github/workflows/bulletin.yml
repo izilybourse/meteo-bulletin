@@ -1,4 +1,4 @@
-name: Relais bulletin Météo-France La Réunion
+name: Relais bulletins Météo-France La Réunion
 on:
   schedule:
     - cron: "7,37 * * * *"   # toutes les 30 min
@@ -13,17 +13,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Préparer le dossier de sortie
+        run: mkdir -p out
+
+      # Bulletin de prévisions météorologiques (meteofrance.re/fr) -> out/bulletin.json
       - name: Récupérer le bulletin
-        run: python3 fetch_bulletin.py out_bulletin.json
+        id: bulletin
+        continue-on-error: true
+        run: python3 fetch_bulletin.py out/bulletin.json
+
+      # Prévisions marine ACK (meteofrance.re/fr/marine/ack) -> out/ack.json
+      # La page construit le bulletin en JavaScript : on utilise un navigateur sans écran.
+      - name: Installer le navigateur
+        continue-on-error: true
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Récupérer le bulletin ACK
+        id: ack
+        continue-on-error: true
+        run: python3 fetch_ack.py out/ack.json
+
+      # Publication : on garde les fichiers précédents de la branche data si une récupération a échoué
       - name: Publier sur la branche data
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir /tmp/pub && cp out_bulletin.json /tmp/pub/bulletin.json && cd /tmp/pub
+          mkdir /tmp/pub && cd /tmp/pub
           git init -q -b data
           git config user.name "bulletin-relay"
           git config user.email "bulletin-relay@users.noreply.github.com"
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git add bulletin.json
-          git commit -qm "bulletin $(date -u +%FT%TZ)"
+          if git fetch -q --depth 1 origin data; then git checkout -q FETCH_HEAD -- . ; fi
+          cp -f "$GITHUB_WORKSPACE"/out/*.json . 2>/dev/null || true
+          ls -l
+          git add -A
+          git commit -qm "bulletins $(date -u +%FT%TZ)"
           git push -f origin data
