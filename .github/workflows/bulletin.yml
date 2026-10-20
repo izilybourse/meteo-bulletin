@@ -46,6 +46,11 @@ jobs:
         continue-on-error: true
         run: python3 fetch_marine.py out/marine.json
 
+      # --- Séismes et alertes tsunami BMKG (InaTEWS) -> tsunami.json
+      - name: Séismes et tsunamis BMKG
+        continue-on-error: true
+        run: python3 fetch_tsunami.py out/tsunami.json
+
       # --- Images : radar (meteofrance.re/fr/images-radar) et carte Vigicrues -> radar.png, crues.png, images.json
       - name: Images radar et crues
         continue-on-error: true
