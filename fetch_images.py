@@ -118,8 +118,20 @@ def capturer_crues(page, dossier):
     return {"image": "crues.png", "recupere": maintenant(), "source": CRUES_URL}
 
 
+JS_CYCLONES = """() => {
+  const el = document.querySelector('#mf_cyclone');
+  const app = el && el.__vue_app__;
+  const st = app && app.config && app.config.globalProperties && app.config.globalProperties.$store && app.config.globalProperties.$store.state;
+  if (!st || !Array.isArray(st.cyclones) || !st.publish_date) return null;
+  return {publish_date: st.publish_date, season: st.current_season, bassin: st.bassin, cyclones: JSON.parse(JSON.stringify(st.cyclones))};
+}"""
+
+
 def capturer_cyclone_mf(page, dossier):
-    """Carte « Cyclone et activité cyclonique » de Météo-France La Réunion (Leaflet, #map)."""
+    """Carte « Cyclone et activité cyclonique » de Météo-France La Réunion (Leaflet, #map).
+    On enregistre (1) une image de la carte, (2) les cyclones / zones perturbées que la page affiche
+    (trajectoires GeoJSON lues dans l'état de la page : aucun jeton n'est lu ni copié), pour que le widget
+    redessine une carte interactive."""
     page.goto(CYCLONE_MF_URL, wait_until="domcontentloaded", timeout=60000)
     refuser_cookies(page)
     page.wait_for_selector("#map .leaflet-container, #map.leaflet-container", timeout=45000)
@@ -135,30 +147,20 @@ def capturer_cyclone_mf(page, dossier):
     except Exception:
         pass
     page.locator("#map").screenshot(path=os.path.join(dossier, "cyclone_mf.png"))
-    return {"image": "cyclone_mf.png", "date_affichee": date_affichee, "recupere": maintenant(), "source": CYCLONE_MF_URL}
-
-
-WL_INIT = """
-(function(){
-  function emballer(M, set){
-    if(!M || M.__w) return M;
-    var W = function(){ var m = new (Function.prototype.bind.apply(M, [null].concat([].slice.call(arguments))))(); window.__wlmap = m; return m; };
-    W.prototype = M.prototype; W.__w = 1; return W;
-  }
-  function essayer(){
-    try{
-      var g = window.google && google.maps; if(!g) return;
-      if(g.Map && !g.Map.__w){ try{ g.Map = emballer(g.Map); }catch(e){} }
-      if(g.importLibrary && !g.importLibrary.__w){
-        var il = g.importLibrary;
-        var f = function(){ return il.apply(g, arguments).then(function(r){ try{ if(r && r.Map && !r.Map.__w) r.Map = emballer(r.Map); }catch(e){} return r; }); };
-        f.__w = 1; g.importLibrary = f;
-      }
-    }catch(e){}
-  }
-  var t = setInterval(essayer, 5); setTimeout(function(){ clearInterval(t); }, 40000);
-})();
-"""
+    meta = {"image": "cyclone_mf.png", "date_affichee": date_affichee, "recupere": maintenant(), "source": CYCLONE_MF_URL}
+    try:
+        data = page.evaluate(JS_CYCLONES)
+        if data:
+            data["recupere"] = meta["recupere"]
+            with open(os.path.join(dossier, "cyclone_mf.json"), "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
+            meta["data"] = "cyclone_mf.json"
+            meta["nb_cyclones"] = len(data["cyclones"])
+        else:
+            print("  état de la page introuvable : carte interactive indisponible (image seule)")
+    except Exception as e:
+        print("  lecture des cyclones impossible :", repr(e)[:150])
+    return meta
 
 
 def capturer_weatherlab(page, dossier):
