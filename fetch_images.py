@@ -54,7 +54,8 @@ def capturer_radar(page, dossier):
         "() => document.querySelectorAll('#map_wrapper .leaflet-tile-loaded').length >= 4", timeout=45000)
     page.wait_for_timeout(4000)
     page.add_style_tag(content=".leaflet-control-container{visibility:hidden !important}")  # la date est reprise par le widget
-    lire_date = lambda: page.locator("a.timecontrol-date").first.inner_text(timeout=3000).strip()
+    # textContent (et non innerText : vide quand l'élément est masqué par visibility:hidden)
+    lire_date = lambda: (page.evaluate("() => { const e=document.querySelector('a.timecontrol-date'); return e ? e.textContent.trim() : '' }") or "")
     attendre_tuiles = lambda: page.wait_for_function(
         "() => document.querySelectorAll('#map_wrapper .leaflet-tile:not(.leaflet-tile-loaded)').length === 0", timeout=15000)
     vues = []
@@ -69,10 +70,19 @@ def capturer_radar(page, dossier):
         if i == NB_IMAGES_RADAR - 1:
             break
         page.evaluate("() => document.querySelector('a.timecontrol-backward').dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}))")
-        try:
-            page.wait_for_function("(d) => document.querySelector('a.timecontrol-date').innerText.trim() !== d", arg=date, timeout=8000)
-        except Exception:
-            break   # début de la boucle atteint
+        if date:
+            try:
+                page.wait_for_function("(d) => { const e=document.querySelector('a.timecontrol-date'); return !e || e.textContent.trim() !== d }", arg=date, timeout=8000)
+            except Exception:
+                break   # début de la boucle atteint
+        else:
+            page.wait_for_timeout(2500)   # date illisible : on laisse l'image changer, doublons éliminés ensuite
+    uniques = []
+    for d, o in vues:   # supprime les images identiques consécutives (si la date n'était pas lisible)
+        if not uniques or uniques[-1][1] != o:
+            uniques.append((d, o))
+    vues = uniques
+    print("  radar : %d image(s), dates: %s" % (len(vues), [d for d, _ in vues][:3]))
     vues.reverse()   # du plus ancien au plus récent
     for f in os.listdir(dossier):
         if f.startswith("radar_") and f.endswith(".jpg"):
