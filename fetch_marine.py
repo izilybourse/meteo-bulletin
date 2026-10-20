@@ -15,7 +15,7 @@ import json, re, sys
 from datetime import datetime, timezone
 
 BASE = "https://meteofrance.re/fr/marine"
-ZONES = [("cote", "Côte (20 milles)"), ("large", "Large"), ("grand-large", "Grand large")]
+ZONES = [("cote", "Côte (20 milles)"), ("large", "Large")]
 
 JS_ITEMS = """(sel) => [...document.querySelectorAll(sel + ' h2, ' + sel + ' h3, ' + sel + ' p')]
   .map(e => [e.tagName.toLowerCase(), (e.innerText || e.textContent || '').replace(/\\s+/g, ' ').trim()])
