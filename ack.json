@@ -1,0 +1,51 @@
+{
+ "source": "https://meteofrance.re/fr/marine/ack",
+ "titre": "BULLETIN DE PREVISIONS MARINE POUR LA ZONE ACK (AMSTERDAM-CROZET-KERGUELEN)",
+ "emission": "Bulletin rédigé le samedi 24 octobre 2026 à 05 UTC.",
+ "emission_iso": "2026-10-24T05:00:00+00:00",
+ "notes": [
+  "Vitesse du vent moyen en BEAUFORT. Les rafales peuvent être supérieures de 40% au vent moyen."
+ ],
+ "recupere": "2026-10-24T14:08:27Z",
+ "sections": [
+  {
+   "titre": "PARTIE 1 : Avis",
+   "paragraphes": [
+    "- Fort coup de vent en cours sur KER.",
+    "- Coup de vent en cours sur AMS et CRO."
+   ]
+  },
+  {
+   "titre": "PARTIE 2 : Situation générale le samedi 24 octobre 2026 à 00 UTC",
+   "paragraphes": [
+    "- Dépressions 975 hPa vers 47S/56E déplacement assez rapide vers le Sud-Est. Front froid (CF) axé: 22S/39E, 25S/50E, 30S/57E, 34S/60E, 39S/61E, 42S/61E.",
+    "- Hautes pressions sur WAM à la fin."
+   ]
+  },
+  {
+   "titre": "PARTIE 3 : Prévisions valables 24 heures du samedi 24 octobre 2026 à 06 UTC au dimanche 25 octobre 2026 à 06 UTC",
+   "paragraphes": [
+    "----- WAM (30S/40S, 50E/65E) -----",
+    "Pluie à l'Est au début, averses et grains.",
+    "VENT : Nord-Ouest 7 à l'Est au début avec fortes rafales revenant Sud-Ouest 5/6, localement 7 sur extrême Sud, mollissant 4/5 plus tard.",
+    "MER : forte à très forte. Houle d'Ouest à Sud-Ouest s'amplifiant 3 à 5 m.",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "----- AMS (30S/40S, 65E/80E) -----",
+    "Pluie (CF).",
+    "VENT : secteur Nord 7/8 mollissant Sud-Ouest 4/5 à la fin.",
+    "MER : devenant forte à très forte par le sud-ouest par houle de Nord-Ouest 2 à 4 m.",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "----- CRO (40S/50S, 50E/65E) -----",
+    "Averses et grains.",
+    "VENT : secteur Ouest 7/8 mollissant Sud-Ouest 6/7 à la fin. Fortes rafales au sud.",
+    "MER : très forte à grosse. Houle de Nord-Ouest 2 à 4 m au sud puis houle d'Ouest à Sud-Ouest 3 à 5 m. Mer croisée.",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "------ KER (40S/50S, 65E/80E) -----",
+    "Pluie (CF). Averses et grains.",
+    "VENT : Nord-Ouest 8/9 mollissant 6/7 localement 8 au sud.",
+    "MER : devenant très forte à grosse. Houle de Nord-Ouest 3 à 5 m.",
+    "VISI : Mauvaise à très mauvaise sous précipitations."
+   ]
+  }
+ ]
+}

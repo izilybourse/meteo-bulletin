@@ -1,0 +1,117 @@
+{
+ "recupere": "2026-10-24T14:08:27Z",
+ "source": "https://meteofrance.re/fr/marine",
+ "avis_houle": "Avis de houle en cours",
+ "zones": {
+  "cote": {
+   "source": "https://meteofrance.re/fr/marine/cote",
+   "zone": "Côte (20 milles)",
+   "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES POUR LES ZONES COTIERES DE LA REUNION",
+   "emission": "Bulletin émis le samedi 24 octobre 2026 à 16 heures locales La Réunion (UTC+4)",
+   "notes": [
+    "Bulletin côtier pour la bande des 20 milles nautiques. Vent moyen selon échelle Beaufort. Mer selon échelle Douglas. Attention : en situation normale, les rafales peuvent être supérieures de 40 % au vent moyen et les vagues maximales atteindre 2 fois la hauteur significative."
+   ],
+   "sections": [
+    {
+     "titre": "Bulletin spécial",
+     "paragraphes": [
+      "Avis de houle N°32 prévue"
+     ]
+    },
+    {
+     "titre": "Situation générale et évolution",
+     "paragraphes": [
+      "Flux de Nord-Ouest faible à l'avant d'un front."
+     ]
+    },
+    {
+     "titre": "Prévisions valables pour la nuit du samedi 24 octobre au dimanche 25 octobre et la journée du dimanche 25 octobre",
+     "paragraphes": [
+      "----- DE LA GRANDE CHALOUPE A LA POINTE AU SEL -----",
+      "Régime de brises force 2 à 3 fraîchissant secteur Sud 5/6 au sud de la Pointe des Aigrettes en journée.",
+      "Mer peu agitée, devenant agitée à forte par houle de Sud-Ouest 1 mètre 50 à 2 mètres à partir de dimanche après-midi.",
+      "----- DE LA POINTE AU SEL A SAINT-JOSEPH -----",
+      "Pluie ou averses dimanche.",
+      "Régime de brises force 2 à 3 fraîchissant Sud-Est 4 à 5 dimanche en journée.",
+      "Mer peu agitée devenant agitée à forte par houle de Sud-Ouest 1 mètre 50 à 2 mètres.",
+      "----- DE SAINT-JOSEPH A SAINTE-ROSE -----",
+      "Pluie ou averses dimanche.",
+      "Régime de brises force 2 à 3 fraîchissant Sud-Est 4 à 5 au large mais 3 à 4 à la côte dimanche en journée.",
+      "Mer peu agitée devenant agitée à forte par houle de Sud-Ouest 1 mètre 50 à 2 mètres.",
+      "----- DE SAINTE-ROSE A LA GRANDE CHALOUPE -----",
+      "Régime de brises force 2 à 3 fraîchissant Sud-Est 5 à 6 dimanche en journée.",
+      "Mer peu agitée devenant agitée au large en journée de dimanche."
+     ]
+    },
+    {
+     "titre": "Tendance pour le lundi 26 octobre",
+     "paragraphes": [
+      "Averses dans l'Est et le Sud-Est.",
+      "Alizé de Sud-Est 5 à 6 de la pointe au sel au sud sauvage et de Sainte-Rose à Saint-Denis.",
+      "Brises ailleurs.",
+      "Mer forte par houle de sud-ouest de 2 mètres à 2 mètres 50 dans l'Ouest et le Sud s'atténuant. Agitée ailleurs."
+     ]
+    },
+    {
+     "titre": "Tendance pour le mardi 27 octobre",
+     "paragraphes": [
+      "Averses dans l'Est et le Sud-Est.",
+      "Alizé d'Est-sud-est 4 à 5 de la pointe au sel au sud sauvage, et de Champ Borne à Saint-Denis.",
+      "Brises ailleurs.",
+      "Mer agitée."
+     ]
+    }
+   ],
+   "bulletin_special": "Zones concernées de la Pointe des Aigrettes à la Pointe de la Table en passant par Saint-Pierre. Un front traverse la Réunion en journée de dimanche. Il est suivi d'un épisode de houle australe entre dimanche soir et lundi après-midi. Elle atteint environ 2 mètres 50 avec une période de 14 secondes. - Houle d'alizés : 3 mètres - Houle cyclonique : 2 mètres 50 - Houle australe : 2 mètres 50 mais abaissement à 2 mètres en cas de houle très longue caractérisée par des périodes supérieures ou égales à 16 secondes. Les avis de houle sont valables au sein de la bande côtière des 2 milles nautiques."
+  },
+  "large": {
+   "source": "https://meteofrance.re/fr/marine/large",
+   "zone": "Large",
+   "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES POUR LE LARGE DE LA REUNION, DE 15S A 25S ET DE 50E à 60E",
+   "emission": "Bulletin émis le samedi 24 octobre 2026 à 16 heures locales La Réunion (UTC+4)",
+   "notes": [
+    "La vitesse du vent est exprimée en force Beaufort"
+   ],
+   "sections": [
+    {
+     "titre": "Avis",
+     "paragraphes": [
+      "Néant."
+     ]
+    },
+    {
+     "titre": "Situation générale et évolution",
+     "paragraphes": [
+      "Alizé de secteur Est faible au nord et secteur Sud modéré au sud à l'arrière du front."
+     ]
+    },
+    {
+     "titre": "Prévisions valables pour la nuit du samedi 24 octobre au dimanche 25 octobre et la journée du dimanche 25 octobre",
+     "paragraphes": [
+      "Pluie frontale au sud, rares averses au nord.",
+      "Vent de Sud-Est force 3 à 4 au nord, et secteur Sud 4 à 5 au sud à l'arrière du front.",
+      "Mer peu agitée à agitée au nord, devenant forte au sud par houle de Sud-Ouest 2 à 3 mètres."
+     ]
+    },
+    {
+     "titre": "Tendance pour le lundi 26 octobre",
+     "paragraphes": [
+      "Averses éparses plus fréquentes au Nord.",
+      "Secteur Est 4 à 5.",
+      "Agitée à forte au sud par houle de sud-ouest 2 à 3 mètres, s'atténuant par l'ouest."
+     ]
+    },
+    {
+     "titre": "Tendance pour le mardi 27 octobre",
+     "paragraphes": [
+      "Rares averses.",
+      "Secteur Est 3 à 4, localement 5 sur extrême Est.",
+      "Agitée."
+     ]
+    }
+   ],
+   "bulletin_special": null
+  }
+ },
+ "erreurs": {}
+}

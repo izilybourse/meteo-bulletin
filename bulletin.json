@@ -1,0 +1,50 @@
+{
+ "source": "https://meteofrance.re/fr",
+ "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES",
+ "emission": "Bulletin émis le samedi 24 octobre 2026 à 15 heures locales de La Réunion (UTC+4)",
+ "emission_iso": "2026-10-24T15:00:00+04:00",
+ "recupere": "2026-10-24T14:07:50Z",
+ "sections": [
+  {
+   "titre": "Situation générale",
+   "paragraphes": [
+    "Pas de vigilance particulière.",
+    "Alizé faible à localement modéré de Nord-Nord-Est, revenant progressivement au secteur Nord-Ouest en journée. Passage d'un front froid en journée de dimanche."
+   ]
+  },
+  {
+   "titre": "Prévisions pour la nuit du samedi 24 octobre 2026 au dimanche 25 octobre 2026",
+   "paragraphes": [
+    "Les nuages de la journée se dissipent peu à peu pour laisser place à un ciel bien étoilé pour la première partie de nuit. Cependant, les premiers nuages annonciateurs de la dégradation liée au front froid attendu en journée de dimanche, commencent à s'échouer sur les côtes Sud en seconde partie de nuit.",
+    "Le vent de Nord-Ouest à l'avant du front se maintient vers Saint-Pierre mais il est toutefois peu vigoureux. Des bourrasques de Sud-Sud-Ouest se maintiennent sur les sommets."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le dimanche 25 octobre 2026",
+   "paragraphes": [
+    "Les conditions se dégradent et deviennent plus humides avec le passage d'un front froid. Il est accompagné de pluies qui affectent dans un premier temps une large moitié Sud en matinée, en remontant jusqu'à Cilaos, puis débordent sur la moitié Nord dans l'après-midi. Les cumuls les plus significatifs, mais sans conséquence, intéressent la partie Sud de l'île et plus particulièrement les secteurs de Grand-Coude et de la Crête. Ils sont beaucoup plus faibles concernant le Nord du territoire. Les averses se maintiennent sur le Sud-Est la nuit suivante.",
+    "Le vent fraîchit en matinée en s'orientant au Sud à Sud-Est avec des rafales autour de 60 à 70 km/h sur les plages de l'Ouest. Il est sensible également vers Saint-Pierre, mais un cran en dessous. Ce vent gagne le secteur de Saint-Benoît en cours d'après-midi, pour remonter progressivement jusqu'à Sainte-Suzanne. En altitude, le flux de Sud-Ouest est encore turbulent en matinée.",
+    "Les températures sont en baisse, plutôt légère au Nord, mais plus marquée au Sud avec un mercure affichant souvent 2 à 3°C de moins que la veille sur ces régions.",
+    "La mer devient agitée dans le Sud en matinée, puis forte l'après-midi, sous l'effet conjugué du vent et d'une houle de Sud-Ouest s'amplifiant entre 2 mètres et 2 mètres 50."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le lundi 26 octobre 2026",
+   "paragraphes": [
+    "Au lever du jour, la Réunion est scindée en 2 parties bien distinctes. En effet des nuages porteurs d'averses s'échouent sur une moitié Sud-Est, tandis que le reste du territoire bénéficie de belles éclaircies. L'après-midi, l'évolution diurne prend le relais, avec des averses dans l'intérieur, glissant ensuite vers le littoral de la moitié Nord. Les éclaircies résistent à la côte dans le secteur de Saint-Pierre.",
+    "Le vent de Sud-Est souffle en rafales voisines de 60 km/h sur la capitale du Sud et vers Sainte-Marie.",
+    "Les températures fléchissent encore un peu plus.",
+    "Une mer forte persiste au Sud aux déferlements de la houle de Sud-Sud-Ouest qui s'amortit progressivement vers 2 mètres. Elle est agitée ailleurs."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le mardi 27 octobre 2026",
+   "paragraphes": [
+    "Peu de changement côté ciel, avec des entrées maritimes à l'Est en matinée, suivies de nuages envahissant le relief l'après-midi, délivrant des averses qui finissent leurs courses vers les baies du Nord-Ouest.",
+    "Le vent se redresse un peu plus au secteur Est, tout en mollissant légèrement. Les rafales atteignent les 50 km/h sur le Sud-Sauvage et le Beau-Pays en cours d'après-midi.",
+    "Le mercure est stationnaire.",
+    "La mer est globalement agitée, mais peu agitée au Nord. La houle de Sud-Sud-Ouest s'abaisse vers 1 mètre 50."
+   ]
+  }
+ ]
+}
