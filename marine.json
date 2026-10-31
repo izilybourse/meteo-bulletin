@@ -1,0 +1,120 @@
+{
+ "recupere": "2026-10-31T08:52:29Z",
+ "source": "https://meteofrance.re/fr/marine",
+ "avis_houle": "Aucun Avis de houle en cours",
+ "zones": {
+  "cote": {
+   "source": "https://meteofrance.re/fr/marine/cote",
+   "zone": "Côte (20 milles)",
+   "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES POUR LES ZONES COTIERES DE LA REUNION",
+   "emission": "Bulletin émis le samedi 31 octobre 2026 à 04 heures locales La Réunion (UTC+4)",
+   "notes": [
+    "Bulletin côtier pour la bande des 20 milles nautiques. Vent moyen selon échelle Beaufort. Mer selon échelle Douglas. Attention : en situation normale, les rafales peuvent être supérieures de 40 % au vent moyen et les vagues maximales atteindre 2 fois la hauteur significative."
+   ],
+   "sections": [
+    {
+     "titre": "Bulletin spécial",
+     "paragraphes": [
+      "- Avis de grand frais force 7 en cours à temporairement coup de vent force 8 prévu la nuit prochaine à proximité des côtes Ouest et Est."
+     ]
+    },
+    {
+     "titre": "Situation générale et évolution",
+     "paragraphes": [
+      "Axe pluvio-orageux approchant la Réunion par le Sud-Ouest sur la période.",
+      "Flux de secteur Nord modéré à assez fort, mais fort à l'Ouest et à l'Est de l'île."
+     ]
+    },
+    {
+     "titre": "Prévisions valables pour le samedi 31 octobre et la nuit suivante",
+     "paragraphes": [
+      "----- DE LA GRANDE CHALOUPE A LA POINTE AU SEL -----",
+      "Averses éparses, plus nombreuses avec passage de grains sur la période.",
+      "Vent de secteur Nord à Nord-Est force 5 à 6 parfois 4 au nord de la Pointe des Galets cette nuit, et fraîchissant 6 à 7 en journée au sud des Aigrettes et jusque 8 avec fortes rafales la nuit prochaine. Brises force 2 à 3 à la côte au Sud vers Saint-Leu. Rafales.",
+      "Mer peu agitée à agitée de la côte vers le large, par mer du vent de 1 mètre à 1 mètre 50.",
+      "----- DE LA POINTE AU SEL A SAINT-JOSEPH -----",
+      "Averses éparses, plus nombreuses avec possible passage de grains sur la période.",
+      "Brises force 2 à 4 à la côte, mais Nord force 5 à 6 avec rafales au large d'Étang- Salé, fraichissant parfois 7 à 8 avec fortes rafales.",
+      "Mer peu agitée à agitée de la côte vers le large. Houle d'Est de 1 mètre à 1 mètre 50 d'Ouest en Est. Mer croisée au large d'Étang-Salé avec une mer du vent atteignant 1 mètre 50.",
+      "----- DE SAINT-JOSEPH A SAINTE-ROSE -----",
+      "Averses éparses au Nord de la Pointe de la Table, puis possiblement partout plus tard avec passage de grains.",
+      "Brises force 2 à 4 à l'Ouest de Saint-Philippe mais vent de secteur Nord force 5 à 6 ailleurs avec rafales et fraîchissant force 6 à 7 en journée voire jusque force 8 avec fortes rafales la nuit prochaine.",
+      "Mer agitée et croisée par houle de secteur Est vers 1 mètre 50 et mer du vent entre 1 mètre 50 et 2 mètres.",
+      "----- DE SAINTE-ROSE A LA GRANDE CHALOUPE -----",
+      "Averses éparses, plus nombreuses avec passage de grains sur la période.",
+      "Vent de secteur Nord à Nord-Est force 3 à 4 fraîchissant force 4 à 5 en journée vers Sainte-Rose, mais régime de brises à la côte entre Saint-Denis et Saint-Benoit.",
+      "Mer agitée, mais peu agitée à la côte vers Saint-Denis. Houle d'Est de 1 mètre à 1 mètre 50 d'Ouest en Est."
+     ]
+    },
+    {
+     "titre": "Tendance pour le dimanche 01 novembre",
+     "paragraphes": [
+      "Grains et averses éparses.",
+      "Vent de secteur Nord revenant davantage Nord-Ouest, force 3 à 5, localement encore force 6 en début de journée au large. Brises à la côte au Nord et au Sud.",
+      "Mer peu agitée à agitée. Houle d'Est puis de secteur Sud entre 1 mètre et 1 mètre 50."
+     ]
+    },
+    {
+     "titre": "Tendance pour le lundi 02 novembre",
+     "paragraphes": [
+      "Grains et averses éparses.",
+      "Vent de secteur Nord à Nord-Ouest force 2 à 4 avec brises à la côte, revenant secteur Sud puis Sud-Est à la fin.",
+      "Mer peu agitée à agitée."
+     ]
+    }
+   ],
+   "bulletin_special": "Aucun BMS en cours."
+  },
+  "large": {
+   "source": "https://meteofrance.re/fr/marine/large",
+   "zone": "Large",
+   "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES POUR LE LARGE DE LA REUNION, DE 15S A 25S ET DE 50E à 60E",
+   "emission": "Bulletin émis le samedi 31 octobre 2026 à 04 heures locales La Réunion (UTC+4)",
+   "notes": [
+    "La vitesse du vent est exprimée en force Beaufort"
+   ],
+   "sections": [
+    {
+     "titre": "Avis",
+     "paragraphes": [
+      "- Coup de Vent force 8 prévu la nuit prochaine à proximité des côtes Ouest et Sud de la Réunion."
+     ]
+    },
+    {
+     "titre": "Situation générale et évolution",
+     "paragraphes": [
+      "Front orageux s'étirant du Nord-Ouest vers Sud zone, à l'ouest de la Réunion.",
+      "Vent de secteur Nord modéré à assez fort à l'avant du front, voire localement fort, revenant Sud-Ouest modéré puis mollissant faible à modéré sur Sud-Ouest zone à l'arrière du front."
+     ]
+    },
+    {
+     "titre": "Prévisions valables pour le samedi 31 octobre et la nuit suivante",
+     "paragraphes": [
+      "Pluies et grains frontaux, parfois orageux sur Ouest et Sud zone. Averses éparses ailleurs.",
+      "Vent de secteur Nord force 4 à 5 à l'avant du front, mais force 6 à 7 à proximité du front et près des îles des Mascareignes. Sur le Sud-Ouest à l'arrière du front : secteur Sud force 4 à 5 puis mollissant 2 à 3 à la fin. Rafales.",
+      "Mer peu agitée à agitée du Nord vers le Sud. Houle de secteur Est entre 1 mètre 50 et 2 mètres sur la moitié Est."
+     ]
+    },
+    {
+     "titre": "Tendance pour le dimanche 01 novembre",
+     "paragraphes": [
+      "Pluies et grains frontaux sur Sud zone. Averses éparses ailleurs.",
+      "Est à Nord-Est modéré sur Nord-Est zone, et secteur Sud faible à modéré sur Sud-Ouest zone, revenant secteur Sud-Est à la fin.",
+      "Mer agitée. Houle d'Est entre 1 mètre 50 et 2 mètres à l'Est, et houle de secteur Sud entre 1 mètre et 1 mètre 50 arrivant par Sud zone."
+     ]
+    },
+    {
+     "titre": "Tendance pour le lundi 02 novembre",
+     "paragraphes": [
+      "Averses éparses, plus fréquentes et pluies dans l'axe Nord-Ouest/Sud-Est passant vers la Réunion.",
+      "Moitié Nord-Est : secteur Est force 3 à 4, mais secteur Nord-ouest localement 4 à 5 au Sud.",
+      "Moitié Sud-Ouest : secteur Sud à Sud-Est force 3 à 4, localement 1 à 2 à l'Ouest.",
+      "Mer agitée. Houle de secteur Sud entre 1 mètre et 1 mètre 50 se propageant sur la moitié Sud. Houle d'Est autour de 1 mètre 50 au Nord."
+     ]
+    }
+   ],
+   "bulletin_special": null
+  }
+ },
+ "erreurs": {}
+}

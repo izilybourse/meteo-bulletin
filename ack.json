@@ -1,0 +1,50 @@
+{
+ "source": "https://meteofrance.re/fr/marine/ack",
+ "titre": "BULLETIN DE PREVISIONS MARINE POUR LA ZONE ACK (AMSTERDAM-CROZET-KERGUELEN)",
+ "emission": "Bulletin rédigé le samedi 31 octobre 2026 à 05 UTC.",
+ "emission_iso": "2026-10-31T05:00:00+00:00",
+ "notes": [
+  "Vitesse du vent moyen en BEAUFORT. Les rafales peuvent être supérieures de 40% au vent moyen."
+ ],
+ "recupere": "2026-10-31T08:52:28Z",
+ "sections": [
+  {
+   "titre": "PARTIE 1 : Avis",
+   "paragraphes": [
+    "- Néant."
+   ]
+  },
+  {
+   "titre": "PARTIE 2 : Situation générale le samedi 31 octobre 2026 à 00 UTC",
+   "paragraphes": [
+    "- Anticyclone 1029 hPa vers 28S/82E se décalant lentement vers le Nord-Est et anticyclone 1026 hPa vers 36S/46E s'affaiblissant.",
+    "- Dépression 1019 hPa vers 26S/54E se décalant sur Nord WAM avec pluies instables.",
+    "- Front quasi-stationnaire sur WAM et AMS."
+   ]
+  },
+  {
+   "titre": "PARTIE 3 : Prévisions valables 24 heures du samedi 31 octobre 2026 à 06 UTC au dimanche 1 novembre 2026 à 06 UTC",
+   "paragraphes": [
+    "----- WAM (30S/40S, 50E/65E) -----",
+    "Pluies, averses et grains frontaux.",
+    "VENT : Variable dépressionnaire force 5 à 6, temporairement 7 sur Nord zone et variable 2/4 ailleurs.",
+    "MER : agitée à forte par houle de Sud-Ouest 2 à 3 m.",
+    "VISI : très mauvaise sous précipitations.",
+    "----- AMS (30S/40S, 65E/80E) -----",
+    "Pluies et averses frontales.",
+    "VENT : secteur Ouest 3/5 localement 6 au début sur Est zone.",
+    "MER : agitée à forte du nord au sud. Houle d'Ouest 2 à 3 m au début, s'amortissant bientôt de Sud-Ouest 2 m..",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "----- CRO (40S/50S, 50E/65E) -----",
+    "Averses.",
+    "VENT : Secteur Ouest 4 à 6 du Nord au Sud.",
+    "MER : forte à très forte du Nord au Sud. Houle de Sud-Ouest 3 à 5 m.",
+    "VISI : mauvaise sous précipitations.",
+    "------ KER (40S/50S, 65E/80E) -----",
+    "VENT :Sud-Ouest 4 à 6 du Nord au Sud, temporairement 7 avec rafales dans la moitié Sud.",
+    "MER : forte à très forte, temporairement grosse sur extrême Sud. Houle de Nord-Ouest 3 à 4 m puis houle de Sud-Ouest 3 à 4 mètres bientôt.",
+    "VISI : bonne à moyenne."
+   ]
+  }
+ ]
+}

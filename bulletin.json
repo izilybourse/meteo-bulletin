@@ -1,0 +1,53 @@
+{
+ "source": "https://meteofrance.re/fr",
+ "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES",
+ "emission": "Bulletin émis le samedi 31 octobre 2026 à 10 heures locales de La Réunion (UTC+4)",
+ "emission_iso": "2026-10-31T10:00:00+04:00",
+ "recupere": "2026-10-31T08:51:53Z",
+ "sections": [
+  {
+   "titre": "Situation générale",
+   "paragraphes": [
+    "Pas de vigilance particulière.",
+    "Vent de Nord assez fort à fort sur les côtes et crêtes exposées."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le samedi 31 octobre 2026",
+   "paragraphes": [
+    "La Réunion se situe en marge d'un front qui circule à l'Ouest. Le front ne concerne pas le département, mais en revanche vent et pluie sont au programme de la journée.",
+    "Le jour se lève sous un ciel maussade et au Nord d'une ligne allant de Saint-Paul à Saint-Philippe les précipitations sont fréquentes mais d'intensité modéré. Au fil de la journée les pluies débordent dans les cirques de Mafate et Salazie, et quelques averses finissent par arroser le Sud Sauvage. On relève entre 25 et 30 mm de pluie ces trois dernières heures sur les hauts de l'île. Le Sud et l'Ouest sont épargnés par le gros des pluies, mais quelques petites averses restent possible.",
+    "Le vent de secteur Nord est l'élément marquant de ce début de week-end. En effet, il demeure assez fort avec des rafales de 60 à 70 km/h sur la façade Ouest, notamment de Saint-Paul à la Pointe des Trois Bassins, mais également dans les hauts de Saint-Gilles, et de Saint-Leu ainsi que vers la Possession et le Port. Le Sud-Est est également concerné par des rafales similaires. A noter que la Plaine des Cafres pourrait connaître des rafales un peu plus marquées, comprises être 70 et 80 km/h.",
+    "Le mercure est en baisse par manque de soleil.",
+    "Les conditions de navigation restent, quant à elles, plutôt favorables malgré une mer du vent agitée à forte sur les flancs Ouest et Est du département. La mer est agitée en général avec une petite houle d'alizé voisine de 1 mètre 50 qui déferle sur la côte Est."
+   ]
+  },
+  {
+   "titre": "Prévisions pour la nuit du samedi 31 octobre 2026 au dimanche 1 novembre 2026",
+   "paragraphes": [
+    "A l'image de la journée, le ciel en fin de journée reste bien maussade avec une couverture nuageuse assez dense. Dans les hauts du Nord et de l'Est, de la Plaine des Fougères aux contreforts Est du volcan, en passant par Salazie, Bélouve, Takamaka et la Plaine des Palmistes les averses se poursuivent. Le littoral dans son ensemble bénéficie d'un temps plus clément, malgré une couverture nuageuse bien présente sur le Nord et l'Ouest. Au fil des heures le ciel se dégage dans l'Ouest et le Sud-Ouest, jusque vers le Tampon et Cilaos.",
+    "Le vent, de Nord-Est, reste véloce. Les rafales sont voisines de 60 à 70 km/h en montagne, elles peuvent atteindre localement 80 km/h. A l'Ouest, de la Possession à la Pointe des Trois Bassins, à l'Est le long de la route des Laves, les rafales sont également voisines de 60 à 70 km/h. Sur le Sud et le Sud-Ouest c'est un régime de brises qui prédomine.",
+    "La mer est globalement agitée au vent et au déferlement d'une houle d'alizé voisine de 1 mètre 50."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le dimanche 1 novembre 2026",
+   "paragraphes": [
+    "L'amélioration s'installe au fil des heures.",
+    "Au lever du jour des averses persistent du côté de la Plaine des Palmistes, dans les hauteurs de Saint-Benoît ainsi que vers Takamaka. Ailleurs la grisaille est toujours là, mais moins dense que la veille, elle laisse place à quelques éclaircies, notamment à l'Ouest et à l'Est où le vent parvient à dissiper les nuages. Au fil de la matinée, la couleur du ciel évolue assez peu, en revanche, les précipitations s'atténuent progressivement et se cantonnent à arroser les hauteurs de Sainte-Rose et de Saint-Benoît.",
+    "La couverture nuageuse est lacunaire l'après-midi ; le ciel est couvert sur tout le quart Nord-Est, dégagé dans l'Ouest, sur le Sud Sauvage et sur les principaux sommets.",
+    "Malgré une légère baisse, le vent de Nord reste soutenu. Les rafales sont comprises entre 5à et 70 km/h entre la Pointe des Aigrettes et la Pointe au Sel, le long du Sud Sauvage ainsi que du côté du Pas de Bellecombe.",
+    "Les températures maximales oscillent entre 28 et 30°C près du rivage, entre 20 et 25°C dans les terres, 17 à 18°C au Maïdo, au volcan et à la Roche Écrite.",
+    "La mer est agitée au vent et au déferlement d'une houle d'alizé voisine de 1 mètre 50."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le lundi 2 novembre 2026",
+   "paragraphes": [
+    "La semaine débute par une matinée agréable avec la présence de larges périodes ensoleillées sur le département. L'après midi, la couverture nuageuse est présente dans l'intérieur. Le vent étant faible en altitude, de bonnes averses se déclenchent sur la plupart des hauts, aucune région n'étant à l'abri. Le littoral conserve un temps agréable.",
+    "Les brises prédominent en toutes zones.",
+    "La mer est agitée en général. Une houle de Sud-Ouest voisine de 1 mètre 50 déferle sur les côtes Ouest et Sud."
+   ]
+  }
+ ]
+}

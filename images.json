@@ -1,0 +1,72 @@
+{
+ "radar": {
+  "frames": [
+   {
+    "file": "radar_00.jpg",
+    "date": "31/10/2026 05:45:00"
+   },
+   {
+    "file": "radar_01.jpg",
+    "date": "31/10/2026 06:00:00"
+   },
+   {
+    "file": "radar_02.jpg",
+    "date": "31/10/2026 06:15:00"
+   },
+   {
+    "file": "radar_03.jpg",
+    "date": "31/10/2026 06:30:00"
+   },
+   {
+    "file": "radar_04.jpg",
+    "date": "31/10/2026 06:45:00"
+   },
+   {
+    "file": "radar_05.jpg",
+    "date": "31/10/2026 07:00:00"
+   },
+   {
+    "file": "radar_06.jpg",
+    "date": "31/10/2026 07:15:00"
+   },
+   {
+    "file": "radar_07.jpg",
+    "date": "31/10/2026 07:30:00"
+   },
+   {
+    "file": "radar_08.jpg",
+    "date": "31/10/2026 07:45:00"
+   },
+   {
+    "file": "radar_09.jpg",
+    "date": "31/10/2026 08:00:00"
+   },
+   {
+    "file": "radar_10.jpg",
+    "date": "31/10/2026 08:15:00"
+   },
+   {
+    "file": "radar_11.jpg",
+    "date": "31/10/2026 08:30:00"
+   },
+   {
+    "file": "radar_12.jpg",
+    "date": "31/10/2026 08:45:00"
+   }
+  ],
+  "date_affichee": "31/10/2026 08:45:00",
+  "recupere": "2026-10-31T08:53:19Z",
+  "source": "https://meteofrance.re/fr/images-radar"
+ },
+ "crues": {
+  "image": "crues.png",
+  "recupere": "2026-10-31T08:53:28Z",
+  "source": "https://www.vigicrues-reunion.re/"
+ },
+ "cyclone_mf": {
+  "image": "cyclone_mf.png",
+  "date_affichee": null,
+  "recupere": "2026-10-31T08:53:38Z",
+  "source": "https://meteofrance.re/fr/cyclone"
+ }
+}
