@@ -1,0 +1,50 @@
+{
+ "source": "https://meteofrance.re/fr",
+ "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES",
+ "emission": "Bulletin émis le samedi 07 novembre 2026 à 15 heures locales de La Réunion (UTC+4)",
+ "emission_iso": "2026-11-07T15:00:00+04:00",
+ "recupere": "2026-11-07T18:14:31Z",
+ "sections": [
+  {
+   "titre": "Situation générale",
+   "paragraphes": [
+    "Pas de vigilance particulière.",
+    "Régime d'alizé modéré encore humide la nuit prochaine."
+   ]
+  },
+  {
+   "titre": "Prévisions pour la nuit du samedi 7 novembre 2026 au dimanche 8 novembre 2026",
+   "paragraphes": [
+    "Le scénario de la nuit dernière se répète. En effet, à l'Est d'une ligne Saint-Denis Saint-Joseph, en passant par Salazie et massif du Volcan, le temps est couvert avec des averses parfois modérées.Ailleurs les conditions sont beaucoup plus clémentes, malgré quelques débordements temporaires vers le Port.",
+    "Le vent d'Est-Nord-Est reste perceptible en baie de la Possession, vers la Grande-Chaloupe et sur le Sud-Sauvage, avec des rafales atteignant les 50 km/h."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le dimanche 8 novembre 2026",
+   "paragraphes": [
+    "Les entrées maritimes de la nuit s'attardent à l'Est en matinée, apportant quelques averses du chef-lieu à Saint-Joseph en passant par Takamaka, Salazie et le massif du Volcan. Elles tendent à s'estomper progressivement au fil des heures. Ailleurs le Soleil domine. Dans l'après-midi, les éclaircies reviennent sur la majorité du littoral, tandis que les nuages d'évolution diurne se développent sur les pentes. Ils ont une préférence pour les Hauts du Nord-Ouest ou quelques ondées se manifestent. Ces dernières peuvent finir leur course en direction de la NRL. Les crêtes et le cœur des cirques de Cilaos et Mafate bénéficient encore de belles périodes ensoleillées.",
+    "Le vent d'Est-Sud-Est apporte des rafales de 50 à 60 km/h de Saint-Philippe à Saint-Pierre, et de 40 à 50 km/h de Sainte-Suzanne à la Grande-Chaloupe. Les brises résistent sur les plages de l'Ouest.",
+    "Les températures maximales s'échelonnent de 28 à 31°C au bord de l'océan, 25 à 28°C dans les cirques et 18 à 20°C au Volcan ou au Maïdo.",
+    "La mer est globalement agitée, localement peu agitée à la côte à l'Ouest, avec la présence de deux petites houles, l'une de Sud et l'autre d'alizés."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le lundi 9 novembre 2026",
+   "paragraphes": [
+    "Quelques passages nuageux porteurs de faibles ondées s'échouent aux premières heures du jour sur les côtes les plus à l'Est, mais partout ailleurs la matinée est belle. Les nuages prennent ensuite l'assaut des pentes, principalement sur les Hauts de la moitié Nord avec une ou deux ondées. Ces nuages finissent par glisser vers les côtes allant du Port à Saint-Benoît en passant par Saint-Denis. Cilaos, les sommets et globalement la moitié Sud rencontrent des conditions beaucoup plus agréables.",
+    "Le vent d'Est-Sud-Est souffle en rafales voisines de 60 km/h sur les côtes Sud, et rentrent temporairement en cours d'après-midi sur les plages de l'Ouest. Quelques bourrasques intéressent également les côtes Nord, mais elles atteignent tout au plus les 50 km/h.",
+    "Le mercure fléchit légèrement.",
+    "La mer est peu agitée à agitée. Les deux petites houles se maintiennent."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le mardi 10 novembre 2026",
+   "paragraphes": [
+    "Après une belle matinée, le temps devient plus nuageux l'après-midi dans l'intérieur par rapport aux jours précédents. Des averses se déclenchent et débordent vers les côtes Nord-Ouest.",
+    "Le vent d'Est souffle en rafales voisines de 50 à 60 km/h sur les côtes Nord et Sud de l'île.",
+    "Les températures sont stables par rapport à la veille.",
+    "Pas de changement attendu côté mer."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "radar": {
+  "frames": [
+   {
+    "file": "radar_00.jpg",
+    "date": "07/11/2026 15:00:00"
+   },
+   {
+    "file": "radar_01.jpg",
+    "date": "07/11/2026 15:15:00"
+   },
+   {
+    "file": "radar_02.jpg",
+    "date": "07/11/2026 15:30:00"
+   },
+   {
+    "file": "radar_03.jpg",
+    "date": "07/11/2026 15:45:00"
+   },
+   {
+    "file": "radar_04.jpg",
+    "date": "07/11/2026 16:00:00"
+   },
+   {
+    "file": "radar_05.jpg",
+    "date": "07/11/2026 16:15:00"
+   },
+   {
+    "file": "radar_06.jpg",
+    "date": "07/11/2026 16:30:00"
+   },
+   {
+    "file": "radar_07.jpg",
+    "date": "07/11/2026 16:45:00"
+   },
+   {
+    "file": "radar_08.jpg",
+    "date": "07/11/2026 17:00:00"
+   },
+   {
+    "file": "radar_09.jpg",
+    "date": "07/11/2026 17:15:00"
+   },
+   {
+    "file": "radar_10.jpg",
+    "date": "07/11/2026 17:30:00"
+   },
+   {
+    "file": "radar_11.jpg",
+    "date": "07/11/2026 17:45:00"
+   },
+   {
+    "file": "radar_12.jpg",
+    "date": "07/11/2026 18:00:00"
+   }
+  ],
+  "date_affichee": "07/11/2026 18:00:00",
+  "recupere": "2026-11-07T18:15:47Z",
+  "source": "https://meteofrance.re/fr/images-radar"
+ },
+ "crues": {
+  "image": "crues.png",
+  "recupere": "2026-11-07T18:15:57Z",
+  "source": "https://www.vigicrues-reunion.re/"
+ },
+ "cyclone_mf": {
+  "image": "cyclone_mf.png",
+  "date_affichee": "Carte publiée le 07 novembre 2026 à 16h40 (heure La Réunion)",
+  "recupere": "2026-11-07T18:16:05Z",
+  "source": "https://meteofrance.re/fr/cyclone",
+  "data": "cyclone_mf.json",
+  "nb_cyclones": 1
+ }
+}

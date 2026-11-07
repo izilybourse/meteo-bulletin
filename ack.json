@@ -1,0 +1,50 @@
+{
+ "source": "https://meteofrance.re/fr/marine/ack",
+ "titre": "BULLETIN DE PREVISIONS MARINE POUR LA ZONE ACK (AMSTERDAM-CROZET-KERGUELEN)",
+ "emission": "Bulletin rédigé le samedi 7 novembre 2026 à 15 UTC.",
+ "emission_iso": "2026-11-07T15:00:00+00:00",
+ "notes": [
+  "Vitesse du vent moyen en BEAUFORT. Les rafales peuvent être supérieures de 40% au vent moyen."
+ ],
+ "recupere": "2026-11-07T18:15:03Z",
+ "sections": [
+  {
+   "titre": "PARTIE 1 : Avis",
+   "paragraphes": [
+    "- Coup de vent force 8 sur Sud CRO et Sud KER"
+   ]
+  },
+  {
+   "titre": "PARTIE 2 : Situation générale le samedi 7 novembre 2026 à 12 UTC",
+   "paragraphes": [
+    "- Anticyclone 1031 hPa vers 35S/81E.",
+    "- Dépression 952 hPa vers 58S/57E avec front froid CF associé et axé 42S/57E, 45S/60E, 51S/67E se déplaçant vers l'Est."
+   ]
+  },
+  {
+   "titre": "PARTIE 3 : Prévisions valables 24 heures du samedi 7 novembre 2026 à 18 UTC au dimanche 8 novembre 2026 à 18 UTC",
+   "paragraphes": [
+    "----- WAM (30S/40S, 50E/65E) -----",
+    "Pluies, grains et averses frontales CF par Ouest zone.",
+    "VENT : secteur Nord-Ouest 4 à 6 localement 7 à l'avant de CF, revenant secteur Sud 5/6 à l'arrière.",
+    "MER : Agitée à forte du Nord au Sud. Houle de Sud-Ouest de 2 mètres à l'arrière de CF en fin de période.",
+    "VISI : Mauvaise sous précipitations.",
+    "----- AMS (30S/40S, 65E/80E) -----",
+    "Averses éparses sur nord zone.",
+    "VENT : Anticyclonique 2 à 4, s’établissant Nord-Ouest 4/5, localement 6 par Ouest zone en fin de période.",
+    "MER : forte, devenant agitée par l'ouest. Houle de Sud-Ouest de 2 mètres s'amortissant.",
+    "VISI : mauvaise sous précipitations.",
+    "----- CRO (40S/50S, 50E/65E) -----",
+    "Pluies, grains et averses frontales sous CF sur Nord-Est zone puis averses éparses.",
+    "VENT : Revenant secteur Ouest 4/5 localement 6 au nord et 6/7 localement 8 au sud à l'arrière de CF.",
+    "MER : forte à très forte. Houle de secteur Nord-Ouest de 2 à 4 mètres s'amortissant à l'arrière de CF",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "------ KER (40S/50S, 65E/80E) -----",
+    "Pluies, grains et averses frontales sous CF.",
+    "VENT : secteur Nord-Ouest 6 à 7 localement 8, avec rafales.",
+    "MER : forte à très forte. Houle de secteur Ouest à Nord-Ouest 2 à 4 mètres.",
+    "VISI : mauvaise à très mauvaise sous précipitations."
+   ]
+  }
+ ]
+}
