@@ -1,0 +1,51 @@
+{
+ "source": "https://meteofrance.re/fr",
+ "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES",
+ "emission": "Bulletin émis le samedi 14 novembre 2026 à 10 heures locales de La Réunion (UTC+4)",
+ "emission_iso": "2026-11-14T10:00:00+04:00",
+ "recupere": "2026-11-14T10:57:54Z",
+ "sections": [
+  {
+   "titre": "Situation générale",
+   "paragraphes": [
+    "Pas de vigilance particulière.",
+    "Notre île est sous l'influence d'un alizé faible devenant légèrement humide la nuit prochaine."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le samedi 14 novembre 2026",
+   "paragraphes": [
+    "Peu à peu les nuages de pentes se sont formés avec une préférence pour les hauts de l'Ouest.",
+    "Dès le début d'après-midi, les nuages sont nombreux à mi-pentes et débordent sur le littoral de Saint-Denis à Saint-Louis en passant par Saint-Paul. Quelques farines sont possibles sur les hauts du Nord-Ouest et de l'Ouest et sur le littoral de Saint-Paul et de La Possession. Les périodes ensoleillées et les passages nuageux alternent dans les Cirques alors que le soleil est prédominant sur la côte Sud et Est ainsi qu'au volcan.",
+    "Le vent d'Est souffle entre 40 et 50 km/h de Saint-Marie au Port, et sur le Sud Sauvage. Ailleurs, les brises prédominent.",
+    "Les températures maximales prévues vont de 29°c à 31°c sur le littoral, 23°c à 27°c dans les cirques, 21°c à 22°c dans les Plaines, et 18°c à 20°c au Maïdo et au volcan.",
+    "La mer devient peu agitée au déferlement d'une houle de Sud qui s'amortit en dessous de 1 mètre."
+   ]
+  },
+  {
+   "titre": "Prévisions pour la nuit du samedi 14 novembre 2026 au dimanche 15 novembre 2026",
+   "paragraphes": [
+    "Le retour d'un alizé plus humide apporte le long du littoral Est des entrées maritimes porteuses d'averses en particulier pour la deuxième partie de nuit du côté de Sainte-Rose. Ailleurs, le ciel est étoilé avec un premier de croissant de lune. L'observation de la voie lactée est par moments contrariée par un voile nuageux. Le vent reste faible favorisant un régime de brises sur les côtes Réunionnaises.",
+    "Les températures minimales prévues vont de 20°c à 23°c sur le littoral, 10°c à 14°c dans les cirques, 10°c à 12°c dans les plaines et 7°c à 9°c au Maïdo et au Pas de Bellecombe. La mer est peu agitée à localement agitée."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le dimanche 15 novembre 2026",
+   "paragraphes": [
+    "Le régime d'alizé est devenu plus humide au cours de la nuit et cela se ressent sur le littoral Est. Le ciel est quasiment voilé sur l'ensemble du département atténuant ainsi la présence du soleil. Au fil des heures, les nuages deviennent plus nombreux dans l'intérieur et des averses apparaissent à la-journée. Elles sont un plus marquées que les jours précédents.Les régions de bord de mer conservent quelques éclaircies malgré la persistance d'un voile nuageux parfois plus discret.",
+    "Le vent est faible avec la mise en place d'un régime de brises sur l'île.",
+    "Les températures sont stationnaires. Les minimales vont de 20°c à 23°c sur le littoral, 10°c à 13°c dans les cirques. Les températures maximales sont de 29°c à 30°c sur le littoral, 23°c à 27°c dans les cirques.",
+    "La mer est généralement peu agitée. Une houle de Sud-Ouest commence à faire son apparition en journée et monte aux alentours de 1 mètre."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le lundi 16 novembre 2026",
+   "paragraphes": [
+    "Les éclaircies du début de journée laissent place à un ciel plus nuageux dans l'intérieur avec des averses qui se déclenchent par place.",
+    "L'alizé de secteur Est à Sud-Est souffle modérément.",
+    "Les températures minimales sont en légère hausse et les maximales restent stationnaires.",
+    "La mer devient agitée au sud avec une houle australe de Sud-Ouest entre 1 mètre et 1 mètre 50."
+   ]
+  }
+ ]
+}

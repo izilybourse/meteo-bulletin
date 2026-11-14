@@ -1,0 +1,118 @@
+{
+ "recupere": "2026-11-14T10:58:23Z",
+ "source": "https://meteofrance.re/fr/marine",
+ "avis_houle": "Aucun Avis de houle en cours",
+ "zones": {
+  "cote": {
+   "source": "https://meteofrance.re/fr/marine/cote",
+   "zone": "Côte (20 milles)",
+   "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES POUR LES ZONES COTIERES DE LA REUNION",
+   "emission": "Bulletin émis le samedi 14 novembre 2026 à 04 heures locales La Réunion (UTC+4)",
+   "notes": [
+    "Bulletin côtier pour la bande des 20 milles nautiques. Vent moyen selon échelle Beaufort. Mer selon échelle Douglas. Attention : en situation normale, les rafales peuvent être supérieures de 40 % au vent moyen et les vagues maximales atteindre 2 fois la hauteur significative."
+   ],
+   "sections": [
+    {
+     "titre": "Bulletin spécial",
+     "paragraphes": [
+      "Néant."
+     ]
+    },
+    {
+     "titre": "Situation générale et évolution",
+     "paragraphes": [
+      "Régime d'alizé faible à modéré."
+     ]
+    },
+    {
+     "titre": "Prévisions valables pour le samedi 14 novembre et la nuit suivante",
+     "paragraphes": [
+      "----- DE LA GRANDE CHALOUPE A LA POINTE AU SEL -----",
+      "Quelques averses possibles au large au Sud de la Pointe des Aigrettes cette nuit.",
+      "- Au Nord de la Pointe des Aigrettes : Secteur Est force 3 à 4 au large mais régime de brises force 2 à 3 à la côte, fraichissant temporairement Nord-Est force 4, localement 5 à la côte en journée.",
+      "- Au Sud de la Pointe des Aigrettes : régime de brises force 2 à 4.",
+      "Mer peu agitée.",
+      "----- DE LA POINTE AU SEL A SAINT-JOSEPH -----",
+      "Vent de secteur Est à Sud-Est force 4, parfois 5, au large, mollissant force 3 à 4 en soirée mais régime de brises force 2 à 3 à la côte au Nord de Pierrefonds en journée et sur toute la côte cette nuit.",
+      "Mer peu agitée à la côte mais agitée au large, devenant peu agitée cette nuit. Houle de secteur Est autour de 1 mètre.",
+      "----- DE SAINT-JOSEPH A SAINTE-ROSE -----",
+      "Averses éparses en seconde partie de nuit.",
+      "- Le long du Sud Sauvage : vent d'Est à Nord-Est force 4 à 5, mollissant force 3 à 4 cette nuit.",
+      "- Au Nord de la Pointe de la Table : vent de secteur Est force 3 à 4 au large mais régime de brises forces 2 à 3 à la côte.",
+      "Mer agitée, devenant peu agitée cette nuit.. Houle de secteur Est autour de 1 mètre.",
+      "----- DE SAINTE-ROSE A LA GRANDE CHALOUPE -----",
+      "Averses nocturnes éparses.",
+      "- Au Sud de Champ Borne : vent de secteur Est force 3, localement 4, au large mais régime de brises force 2 à 3 à la côte.",
+      "- Au Nord de Champ Borne : vent de Sud-Est force 3 à 4, fraichissant temporairement en journée Est à Nord-Est force 4, localement force 5 vers le Cap Bernard.",
+      "Mer peu agitée, localement agitée au large de Sainte-Rose. Houle de secteur Est autour de 1 mètre au Sud de Champ Borne."
+     ]
+    },
+    {
+     "titre": "Tendance pour le dimanche 15 novembre",
+     "paragraphes": [
+      "Averses à l'Est. Rares averses à l'Ouest.",
+      "Vent de secteur Est force 2 à 3 au Nord, force 3 à localement 4 au Sud et régime de brises force 1 à 3 à l'Est et à l'Ouest.",
+      "Mer peu agitée. Mer croisée au Sud et à l'Est par une houle de Sud-Sud-Ouest et une houle d'Est toutes deux voisines de 1 mètre."
+     ]
+    },
+    {
+     "titre": "Tendance pour le lundi 16 novembre",
+     "paragraphes": [
+      "Vent d'Est à Sud-Est force 3 à 4, parfois 5, au Nord et au Sud mais régime de brises force 2 à 3 à l'Ouest et à l'Est.",
+      "Mer peu agitée, devenant agitée sauf à la côte au Nord. Arrivée d'une longue houle de Sud-Sud-Ouest autour de 1 mètre 50 en fin de journée."
+     ]
+    }
+   ],
+   "bulletin_special": "Aucun BMS en cours."
+  },
+  "large": {
+   "source": "https://meteofrance.re/fr/marine/large",
+   "zone": "Large",
+   "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES POUR LE LARGE DE LA REUNION, DE 15S A 25S ET DE 50E à 60E",
+   "emission": "Bulletin émis le samedi 14 novembre 2026 à 04 heures locales La Réunion (UTC+4)",
+   "notes": [
+    "La vitesse du vent est exprimée en force Beaufort"
+   ],
+   "sections": [
+    {
+     "titre": "Avis",
+     "paragraphes": [
+      "Néant."
+     ]
+    },
+    {
+     "titre": "Situation générale et évolution",
+     "paragraphes": [
+      "Régime d'alizé de secteur Est faible à modéré."
+     ]
+    },
+    {
+     "titre": "Prévisions valables pour le samedi 14 novembre et la nuit suivante",
+     "paragraphes": [
+      "Rares averses, plus fréquentes sur l'extrême Nord cette nuit.",
+      "Vent de secteur Est force 3 à 4, mais de Nord-Est force 3 à 4 sur le quart Sud-Ouest.",
+      "Mer peu agitée à agitée."
+     ]
+    },
+    {
+     "titre": "Tendance pour le dimanche 15 novembre",
+     "paragraphes": [
+      "Averses éparses.",
+      "Vent de Sud-Est force 2 à 3, localement force 4 au Nord, fraichissant force 3 à 4 en soirée.",
+      "Mer peu agitée à agitée."
+     ]
+    },
+    {
+     "titre": "Tendance pour le lundi 16 novembre",
+     "paragraphes": [
+      "Averses éparses.",
+      "Vent de secteur Est force 3 à 4, fraichissant force 4, localement force 5 au Sud-Est en soirée.",
+      "Mer peu agitée à agitée, devenant agitée et localement force au Sud en soirée. Arrivée d'une longue houle de Sud-Sud-Ouest 2 à 3 mètres au Sud en soirée."
+     ]
+    }
+   ],
+   "bulletin_special": null
+  }
+ },
+ "erreurs": {}
+}
