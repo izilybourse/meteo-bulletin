@@ -1,0 +1,52 @@
+{
+ "source": "https://meteofrance.re/fr",
+ "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES",
+ "emission": "Bulletin émis le samedi 21 novembre 2026 à 10 heures locales de La Réunion (UTC+4)",
+ "emission_iso": "2026-11-21T10:00:00+04:00",
+ "recupere": "2026-11-21T07:46:39Z",
+ "sections": [
+  {
+   "titre": "Situation générale",
+   "paragraphes": [
+    "Pas de vigilance particulière.",
+    "Des averses cet après-midi."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le samedi 21 novembre 2026",
+   "paragraphes": [
+    "Les nuages continuent leur progression cet après-midi et deviennent majoritaires dans le ciel réunionnais. Des averses sont de la partie sur le relief, plus particulièrement sur le nord-ouest de l'île ( ( de St-Paul à St-Denis) et la zone de la Plaine des Palmiste où elles se montrent localement très soutenues. Les cumuls sont par endroit significatifs. Ailleurs, les éclaircies se raréfient au fil des heures mais persistent sur les littoraux Est et sud-ouest.",
+    "La chaleur est toujours au rendez-vous, particulièrement sur le rivage où la température dépasse rapidement 30°C.",
+    "Le vent de secteur Est est globalement faible, les brises prédominent.",
+    "La mer est peu agitée avec une petite houle australe et d'alizé."
+   ]
+  },
+  {
+   "titre": "Prévisions pour la nuit du samedi 21 novembre 2026 au dimanche 22 novembre 2026",
+   "paragraphes": [
+    "Les averses perdent en intensité en soirée. Le ciel se dégage sur la partie ouest de l'île et des entrées maritimes sont de nouveau à craindre entre Champ Borne et Ste-Rose en cours de nuit.",
+    "Quelques rafales de vent (40/50 km/h ) sont attendues sur le sud-Sauvage, ailleurs, les brises sont présentes.",
+    "La mer est agitée sur l'ouest et le sud en raison d'une petite houle australe."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le dimanche 22 novembre 2026",
+   "paragraphes": [
+    "Peu d'évolution à attendre pour cette fin de Week-end. En effet, du soleil le matin, puis un ciel plus couvert l'après-midi avec la présence de quelques averses isolées principalement sur les Hauts de l'Ouest.",
+    "De belles éclaircies résistent sur les côtes nord et sud qui restent bien ventilées. L'alizé de secteur Est se renforce avec des rafales de 60 km/h sur Saint-Pierre, 50 km/h sur Sainte-Marie. Les brises prédominent sur les plages de l'Ouest.",
+    "Les températures sont stationnaires et toujours chaudes pour la saison.",
+    "La mer est peu agitée à agitée."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le lundi 23 novembre 2026",
+   "paragraphes": [
+    "La semaine débute comme elle s'est terminée. Du soleil en matinée sur l'ensemble du département, puis une couverture nuageuse présente l'après midi dans l'intérieur.",
+    "Quelques faibles averses se déclenchent dans les hauts, principalement sur les hauteurs du Nord-Ouest.",
+    "Le littoral conserve de belles éclaircies.",
+    "Le vent de secteur Est reste soutenu avec des rafales de 50 km/h environ sur le Nord et le Sud.",
+    "La mer évolue peu."
+   ]
+  }
+ ]
+}

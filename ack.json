@@ -1,0 +1,52 @@
+{
+ "source": "https://meteofrance.re/fr/marine/ack",
+ "titre": "BULLETIN DE PREVISIONS MARINE POUR LA ZONE ACK (AMSTERDAM-CROZET-KERGUELEN)",
+ "emission": "Bulletin rédigé le samedi 21 novembre 2026 à 05 UTC.",
+ "emission_iso": "2026-11-21T05:00:00+00:00",
+ "notes": [
+  "Vitesse du vent moyen en BEAUFORT. Les rafales peuvent être supérieures de 40% au vent moyen."
+ ],
+ "recupere": "2026-11-21T07:47:28Z",
+ "sections": [
+  {
+   "titre": "PARTIE 1 : Avis",
+   "paragraphes": [
+    "Néant."
+   ]
+  },
+  {
+   "titre": "PARTIE 2 : Situation générale le samedi 21 novembre 2026 à 00 UTC",
+   "paragraphes": [
+    "- Anticyclone 1030 hPa vers 33S80E.",
+    "- Anticyclone 1020 hPa vers 30S48E, se renforçant et se décalant vers l'Est.",
+    "- Dépression 961 hPa vers 65S52E.",
+    "- Zone perturbée intéressant Est WAM, Est CRO et KER."
+   ]
+  },
+  {
+   "titre": "PARTIE 3 : Prévisions valables 24 heures du samedi 21 novembre 2026 à 06 UTC au dimanche 22 novembre 2026 à 06 UTC",
+   "paragraphes": [
+    "----- WAM (30S/40S, 50E/65E) -----",
+    "Nombreuses averses sur Est zone au début.",
+    "VENT: secteur Ouest dominant 3 à 5 devenant variable 2/4 mais tournant Nord 5/6 au sud-ouest de la zone à la fin.",
+    "MER : agitée à localement forte au sud. Houle d'Ouest à Sud-Ouest 2m à 3m du nord au sud.",
+    "VISI : mauvaise sous précipitations.",
+    "----- AMS (30S/40S, 65E/80E) -----",
+    "Nombreuses averses sur ouest zone au début se décalant vers l'Est.",
+    "VENT : Nord à Nord-Ouest 3 à 5 localement 6 au sud de la zone, tournant bientôt Sud-Ouest 4/5 au sud-ouest de la zone.",
+    "MER : agitée à localement forte au sud. Houle de Sud-Ouest 2m s'orientant Nord-Ouest à Ouest 2m à 3m à l'ouest de la zone.",
+    "VISI : mauvaise sous précipitations.",
+    "----- CRO (40S/50S, 50E/65E) -----",
+    "Nombreuses averses devenant plus éparses par l'ouest.",
+    "VENT : Nord-Ouest 5/6 sur Est zone au début, s'orientant Sud-Ouest à Ouest 5/6 temporairement 7, puis faiblissant 2/4 en devenant variable sur nord zone par la suite. Vent tournant au Nord 5/6 sur ouest zone à la fin.",
+    "MER : forte à localement très forte au sud. Arrivée d'une houle d'Ouest-Sud-Ouest 3m à 4m.",
+    "VISI : moyenne à mauvaise sous précipitations.",
+    "------ KER (40S/50S, 65E/80E) -----",
+    "Fréquentes averses, s’améliorant par l'ouest à la fin",
+    "VENT : Nord-Ouest 5/6 temporairement 7 revenant Ouest à Sud-Ouest, 4/5 sur nord zone et 6/7 sur sud zone.",
+    "MER : forte à très forte du nord au sud. Houle d'Ouest à Nord-Ouest 2m à 3 m croisant la mer du vent.",
+    "VISI : mauvaise à très mauvaise sous précipitations."
+   ]
+  }
+ ]
+}
