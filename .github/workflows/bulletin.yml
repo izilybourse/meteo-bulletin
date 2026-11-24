@@ -47,10 +47,7 @@ jobs:
         continue-on-error: true
         run: python3 fetch_marine.py out/marine.json
 
-      # --- Séismes et alertes tsunami BMKG (InaTEWS) -> tsunami.json
-      - name: Séismes et tsunamis BMKG
-        continue-on-error: true
-        run: python3 fetch_tsunami.py out/tsunami.json
+      # (séismes et tsunamis BMKG : gérés par tsunami-rapide.yml, workflow dédié et léger)
 
       # --- Images : radar (meteofrance.re/fr/images-radar) et carte Vigicrues -> radar.png, crues.png, images.json
       - name: Images radar et crues
@@ -72,6 +69,10 @@ jobs:
         run: |
           mkdir /tmp/pub && cd /tmp/pub
           cp -f "$GITHUB_WORKSPACE"/prev/* . 2>/dev/null || true
+          # état le plus récent de la branche data (le relais tsunami rapide a pu publier entre-temps)
+          if git clone -q --depth 1 -b data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/fresh 2>/dev/null; then
+            cp -f /tmp/fresh/* . 2>/dev/null || true
+          fi
           cp -f "$GITHUB_WORKSPACE"/out/* . 2>/dev/null || true
           ls -l
           git init -q -b data
