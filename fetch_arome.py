@@ -15,7 +15,7 @@ Si le cycle est déjà celui du fichier précédent, rien n'est retéléchargé.
 Usage : python3 fetch_arome.py sortie.json [--prev ancien_arome.json] [--local dossier_grib]
 Dépendances : pip install eccodes numpy
 """
-import json, os, re, sys, tempfile, urllib.request, urllib.parse
+import json, os, re, sys, tempfile, time, urllib.error, urllib.request, urllib.parse
 from datetime import datetime, timedelta, timezone
 
 BASE = "https://files.data.gouv.fr/meteofrance-pnt/pnt/"
@@ -44,17 +44,32 @@ def log(*a):
     print(*a, flush=True)
 
 
-def http_get(url, dest=None, timeout=120):
+def http_get(url, dest=None, timeout=120, essais=4):
+    """Téléchargement avec réessais (files.data.gouv.fr refuse parfois la connexion : « Connection refused »)."""
     req = urllib.request.Request(url, headers={"User-Agent": "meteo-lab-relay (usage personnel)"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        if dest is None:
-            return r.read().decode("utf-8", "replace")
-        with open(dest, "wb") as f:
-            while True:
-                b = r.read(1 << 20)
-                if not b:
-                    break
-                f.write(b)
+    for n in range(1, essais + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                if dest is None:
+                    return r.read().decode("utf-8", "replace")
+                with open(dest, "wb") as f:
+                    while True:
+                        b = r.read(1 << 20)
+                        if not b:
+                            break
+                        f.write(b)
+                return
+        except urllib.error.HTTPError as e:
+            if e.code < 500 and e.code != 429:      # 404 etc. : inutile de réessayer
+                raise
+            err = e
+        except (urllib.error.URLError, ConnectionError, TimeoutError, OSError) as e:
+            err = e
+        if n == essais:
+            raise err
+        pause = (5, 15, 30)[min(n - 1, 2)]
+        log("échec", repr(err)[:120], "- nouvel essai dans", pause, "s (", n, "/", essais, ")")
+        time.sleep(pause)
 
 
 def lister(url):
