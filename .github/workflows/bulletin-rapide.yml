@@ -1,0 +1,40 @@
+name: Relais bulletin (rapide)
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"   # minutes creuses : GitHub saute moins les exécutions
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: relais          # même groupe que le relais complet : jamais deux publications simultanées
+  cancel-in-progress: false
+jobs:
+  bulletin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Récupérer la branche data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p out prev
+          if git clone -q --depth 1 -b data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" prev_clone; then
+            cp -f prev_clone/* prev/ 2>/dev/null || true
+          fi
+      - name: Bulletin de prévisions
+        run: python3 fetch_bulletin.py out/bulletin.json
+      - name: Publier sur la branche data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir /tmp/pub && cd /tmp/pub
+          cp -f "$GITHUB_WORKSPACE"/prev/* . 2>/dev/null || true
+          cp -f "$GITHUB_WORKSPACE"/out/* . 2>/dev/null || true
+          git init -q -b data
+          git config user.name "meteo-relay"
+          git config user.email "meteo-relay@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git add -A
+          git commit -qm "bulletin $(date -u +%FT%TZ)"
+          git push -f origin data
