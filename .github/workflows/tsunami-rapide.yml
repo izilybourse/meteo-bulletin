@@ -1,0 +1,48 @@
+name: Relais tsunami (rapide)
+# Relais léger : uniquement séismes et alertes tsunami BMKG -> tsunami.json (~15 s).
+# Le cron GitHub est peu fiable (exécutions parfois espacées de plusieurs heures) :
+# le déclenchement fiable vient d'un service externe (cron-job.org) qui appelle workflow_dispatch toutes les minutes ou toutes les 2 min.
+# Le cron ci-dessous n'est qu'un filet de sécurité.
+on:
+  schedule:
+    - cron: "3,8,13,18,23,28,33,38,43,48,53,58 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: relais-tsunami      # groupe propre : jamais bloqué par le relais lourd (Playwright, AROME)
+  cancel-in-progress: false
+jobs:
+  tsunami:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Séismes et tsunamis BMKG
+        run: |
+          mkdir -p out
+          python3 fetch_tsunami.py out/tsunami.json
+      - name: Publier tsunami.json sur la branche data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          for i in 1 2 3; do
+            rm -rf /tmp/pub; mkdir /tmp/pub
+            # état le plus récent de la branche data, relu juste avant la publication
+            if git clone -q --depth 1 -b data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/fresh 2>/dev/null; then
+              cp -f /tmp/fresh/* /tmp/pub/ 2>/dev/null || true
+            fi
+            rm -rf /tmp/fresh
+            cp -f out/tsunami.json /tmp/pub/tsunami.json
+            cd /tmp/pub
+            git init -q -b data
+            git config user.name "meteo-relay"
+            git config user.email "meteo-relay@users.noreply.github.com"
+            git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git add -A
+            git commit -qm "tsunami $(date -u +%FT%TZ)"
+            if git push -f origin data; then exit 0; fi
+            cd "$GITHUB_WORKSPACE"; sleep 5
+          done
+          exit 1

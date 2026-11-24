@@ -30,6 +30,10 @@ jobs:
         run: |
           mkdir /tmp/pub && cd /tmp/pub
           cp -f "$GITHUB_WORKSPACE"/prev/* . 2>/dev/null || true
+          # état le plus récent de la branche data (le relais tsunami rapide a pu publier entre-temps)
+          if git clone -q --depth 1 -b data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/fresh 2>/dev/null; then
+            cp -f /tmp/fresh/* . 2>/dev/null || true
+          fi
           cp -f "$GITHUB_WORKSPACE"/out/* . 2>/dev/null || true
           git init -q -b data
           git config user.name "meteo-relay"
