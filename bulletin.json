@@ -1,0 +1,48 @@
+{
+ "source": "https://meteofrance.re/fr",
+ "titre": "BULLETIN DE PREVISIONS METEOROLOGIQUES",
+ "emission": "Bulletin émis le samedi 28 novembre 2026 à 16 heures locales de La Réunion (UTC+4)",
+ "emission_iso": "2026-11-28T16:00:00+04:00",
+ "recupere": "2026-11-28T18:31:22Z",
+ "sections": [
+  {
+   "titre": "Situation générale",
+   "paragraphes": [
+    "Pas de vigilance particulière.",
+    "Le flux s'oriente progressivement au secteur Nord et se renforce progressivement dans une masse d'air plus humide en journée."
+   ]
+  },
+  {
+   "titre": "Prévisions pour la nuit du samedi 28 novembre 2026 au dimanche 29 novembre 2026",
+   "paragraphes": [
+    "Sous une lune gibbeuse décroissante, la nuit s'annonce bien étoilée. Quelques nuages circulent en mer tout en restant à distances de la côte Est. En revanche, le vent se renforce légèrement sur les Plaines de l'Est et dans la région du Tampon.",
+    "Les minimales seront encore bien douces, avec 21 à 24°C attendus sur les littoraux, autour de 15 à 19°C dans les hauts selon l'altitude, et 5 à 7°C à Bellecombe-Jacob ou au Maïdo.",
+    "Côté mer, elle est agitée aux croisements d'une petite houle australe avec une petite houle d'alizé."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le dimanche 29 novembre 2026",
+   "paragraphes": [
+    "Le temps devient plus lourd et plus humide en particulier sur le nord de l'île. Même si, le début de journée devrait être encore assez ensoleillé, le temps se dégrade par la suite. En effet, le temps devient plus humide et plus instable en journée. Les nuages arrivent par l'Est en cours de matinée, et des averses se déclenchent sur les pentes et l'intérieur de l'île avec des des nuages se développant sur l'ensemble des pentes. Elles sont plus nombreuses et plus intenses que les jours précédents, et pourront concerner davantage le Sud et l'Ouest de l'île en incluant le littoral. Le coup de tonnerre devient même possible en soirée dans la région du Piton de la Fournaise.",
+    "Le vent s'oriente au Nord-Est et se renforce encore un peu vers les régions du Port et de Saint-Philippe avec des rafales pouvant dépasser les 50 km/h. Il est aussi ressenti dans les hauts, notamment sur les sommets et le couloir des Plaines.",
+    "Les températures grimpent légèrement, mais surtout la sensation de moiteur s'accentue en raison de l'humidité.",
+    "La mer reste peu agitée à agitée."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le lundi 30 novembre 2026",
+   "paragraphes": [
+    "En ce début de semaine, le temps reste humide et instable. Les hauts du Nord et de l'Est de l'île sont notamment concernés par des pluies assez régulières, ailleurs les averses sont plus éparses mais toujours assez consistantes. Le risque orageux bien que faible subsiste sur le nord de l'île.",
+    "Le vent de Nord-Est reste modéré, voire localement assez fort dans la région du Port où les rafales approchent les 70km/h.",
+    "La lourdeur s'installe avec températures et humidités élevées. Les températures pourraient ne pas descendre sous les 25-26°C la nuit en bord de mer vers Saint-Gilles, Saint-Paul et Saint-Denis.",
+    "La houle d'alizé est légèrement supérieure à 1 mètre 50 à l'Est."
+   ]
+  },
+  {
+   "titre": "Prévisions pour le mardi 1 décembre 2026",
+   "paragraphes": [
+    "Le temps reste humide sur le Nord-Ouest du département mais des éclaircies se font un peu plus fréquentes sur le sud de l'île. Le vent faiblissant et s'orientant au nord-est est propice à une amélioration des conditions du temps. Cependant, les températures restent élevées pour la saison avec un léger assèchement de la masse d'air. Un vent faiblissant de secteur nord reste néanmoins sensible sur les plages de l'Ouest.Côté mer, elle reste peu agitée à agitée au déferlement de la houle d'alizé."
+   ]
+  }
+ ]
+}

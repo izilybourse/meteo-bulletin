@@ -1,0 +1,51 @@
+{
+ "source": "https://meteofrance.re/fr/marine/ack",
+ "titre": "BULLETIN DE PREVISIONS MARINE POUR LA ZONE ACK (AMSTERDAM-CROZET-KERGUELEN)",
+ "emission": "Bulletin rédigé le samedi 28 novembre 2026 à 15 UTC.",
+ "emission_iso": "2026-11-28T15:00:00+00:00",
+ "notes": [
+  "Vitesse du vent moyen en BEAUFORT. Les rafales peuvent être supérieures de 40% au vent moyen."
+ ],
+ "recupere": "2026-11-28T18:31:46Z",
+ "sections": [
+  {
+   "titre": "PARTIE 1 : Avis",
+   "paragraphes": [
+    "- Coup de vent prévu à la fin sur CRO."
+   ]
+  },
+  {
+   "titre": "PARTIE 2 : Situation générale le samedi 28 novembre 2026 à 12 UTC",
+   "paragraphes": [
+    "- Front froid (CF) sur nord-est AMS, se décalant vers l'est.",
+    "- Anticyclone 1026 hPa vers 35S/61E, se décalant vers l'est.",
+    "- Dépression prévue 981 hPa vers 48S/52E le 29 à 12UTC, précédée par un front chaud (WG) bientôt sur CRO puis sur KER à la fin. Front froid (CG) sur ouest CRO par la suite et ouest WAM à la fin."
+   ]
+  },
+  {
+   "titre": "PARTIE 3 : Prévisions valables 24 heures du samedi 28 novembre 2026 à 18 UTC au dimanche 29 novembre 2026 à 18 UTC",
+   "paragraphes": [
+    "----- WAM (30S/40S, 50E/65E) -----",
+    "Averses éparses, puis pluies, averses et grains frontaux à l'ouest à la fin, localement orageux.",
+    "VENT: anticyclonique 3/4 parfois 5, fraîchissant progressivement Nord 5/6 par l'ouest parfois 7 à l'extrême sud avec rafales.",
+    "MER : agitée à forte.",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "----- AMS (30S/40S, 65E/80E) -----",
+    "Pluies et averses frontales au nord-est devenant moins fréquentes. Averses éparses ailleurs.",
+    "VENT : anticyclonique 3/4 parfois 5, mais Nord-Ouest 4/5 au nord-est au début, et Ouest 5/6 avec rafales à l'extrême sud.",
+    "MER : agitée à forte.",
+    "VISI : mauvaise sous précipitations.",
+    "----- CRO (40S/50S, 50E/65E) -----",
+    "Pluies et averses frontales avec WG, puis pluies, averses et grains frontaux (CG) à l'ouest par la suite, localement orageux.",
+    "VENT : anticyclonique 3/4 parfois 5 au début, fraîchissant bientôt secteur Nord 5/6 parfois 7, puis dépressionnaire 6/7 par la suite parfois 8. Rafales.",
+    "MER : agitée à forte, devenant forte à très forte par la suite par houle de Nord-Ouest 3 à 4m.",
+    "VISI : mauvaise à très mauvaise sous précipitations.",
+    "------ KER (40S/50S, 65E/80E) -----",
+    "Averses éparses neigeuse au sud, puis pluies et averses avec WG à la fin",
+    "VENT : Secteur Ouest 4/5 parfois 6, fraîchissant secteur Nord 5/6 à l'ouest à la fin. Rafales.",
+    "MER : forte par houle de secteur Sud-Ouest vers 3m s'amortissant, devenant agitée à forte par la suite",
+    "VISI : mauvaise sous précipitations."
+   ]
+  }
+ ]
+}
